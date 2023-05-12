@@ -1,0 +1,41 @@
+V1  (Semester project Version)
+    Target:
+        1kSps @ 16-24 bit resolution
+    Current Sense:
+    OpAmp:
+    ADC:
+        CS5533-ASZ                              https://www.digikey.no/no/products/detail/cirrus-logic-inc/CS5533-ASZ/923234
+            16 - 24 bit resolution
+            4 sigma-delta channels
+            SPI interface
+            up to 3840 sps
+    uC:
+        Reqs
+            SPI
+            Hardware Interrupts
+            UART
+    Power Management:
+    Serial Converter:
+        SP485EN-L/TR                            https://www.digikey.no/no/products/detail/maxlinear-inc/SP485EN-L-TR/2471963
+            TTL to RS-422
+            250kbps
+    Serial To USB:
+        U209-30N-IND                            https://www.digikey.no/no/products/detail/tripp-lite/U209-30N-IND/9962685
+            USB to RS-422
+            230kbps
+
+V2  (Master's project Version)
+    Target:
+        1MSps @ 24-32 bit resolution
+    Current Sense:
+    OpAmp:
+    ADC:
+    uC:
+        PIC32MZ0512EFF064-I/PT                  https://www.digikey.no/no/products/detail/microchip-technology/PIC32MZ0512EFF064-I-PT/5323491
+            ~250MHz clock
+            USB High-speed (2.0) interface      (480Mbps)
+            18Msps 12-bit ADC                   (Lets us have two different sample rates, high accuracy or high speed depending on ADC)
+            GPIO ports A-K
+            5 1MBaud I2C ports
+            6 SPI ports                         (50MHz)
+    Power Management:
