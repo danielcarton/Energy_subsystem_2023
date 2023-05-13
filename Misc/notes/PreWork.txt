@@ -14,6 +14,8 @@ V1  (Semester project Version)
             SPI
             Hardware Interrupts
             UART
+        AVR128DB28                              https://www.digikey.no/no/products/detail/microchip-technology/AVR128DB28T-I-SS/12807271
+            Is good ;^)
     Power Management:
     Serial Converter:
         SP485EN-L/TR                            https://www.digikey.no/no/products/detail/maxlinear-inc/SP485EN-L-TR/2471963
