@@ -18,10 +18,14 @@ void SPI_init(){	// TODO THIS IS NOT DONE
 	// Enable the SPI by writing a �1� to the ENABLE bit in SPIn.CTRLA
 }
 
-uint8_t SPI_write(uint8_t addr, uint8_t data){
+uint8_t SPI_write(uint8_t addr, uint8_t data){	// TODO Review this
 	uint8_t data_out;
 	// TODO Select the slave by pulling the SS pin low.
 	// Write the data to the Data Register (SPIn.DATA).
+	SPI0.DATA = addr;
+	// Wait for the transfer to complete by polling the Interrupt Flag (IF) bit in the Status Register (SPIn.INTFLAGS).
+	while (!(SPI0.INTFLAGS & SPI_IF_bm))
+		;
 	SPI0.DATA = data;
 	// Wait for the transfer to complete by polling the Interrupt Flag (IF) bit in the Status Register (SPIn.INTFLAGS).
 	while (!(SPI0.INTFLAGS & SPI_IF_bm))
@@ -32,6 +36,9 @@ uint8_t SPI_write(uint8_t addr, uint8_t data){
 	return data_out;
 }
 
-uint8_t SPI_read(uint8_t addr){
-	
+uint8_t *SPI_read(uint8_t addr, uint8_t inputSize, uint8_t *outputSize){
+	// TODO Select the slave by pulling the SS pin low.
+	// Write the address to the Data Register (SPIn.DATA).
+	SPI0.DATA = addr;
+
 }

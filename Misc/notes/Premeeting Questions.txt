@@ -2,3 +2,4 @@ Can we get some example data?
 What are the average/max input currents/voltages?
 What kind of sample rates and sample resolutions are ideal for you?
 Your diagrams show 4 sampling locations within the harvesting circuit, would it be possible to reduce this to three points?
+Do you need the data to include the time, so that it can show when the experiment started/ended?

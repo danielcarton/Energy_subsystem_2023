@@ -8,14 +8,26 @@
 #include <avr/io.h>
 
 #include "SPI_control.h"
+#include "UART_Control.h"
+#include "RTC_control.h"
 
 
 int main(void)
 {
-    /* Replace with your application code */
-    while (1) 
-    {
-    }
-	
+    SPI_init();
+	UART_init();
+    RTC_init();
+    
+    
 }
 
+void uC_init(void)
+{
+    // Set internal clock to 24MHz
+    // ? These arent entirely necessary, as the default values are all zero
+    CLKCTRL.MCLKCTRLA = 0x00;
+    CLKCTRL.MCLKCTRLB = 0x00;
+    CLKCTRL.MCLKCTRLC = 0x00;
+    
+    
+}
