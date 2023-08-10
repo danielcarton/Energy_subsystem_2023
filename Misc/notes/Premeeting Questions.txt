@@ -1,6 +1,15 @@
-Can we get some example data?
 What are the average/max input currents/voltages?
+    Follow-up: Can we get some example data?
+
 What kind of sample rates and sample resolutions are ideal for you?
+    Follow-up: We considered 1ksps for specialization project and 1Msps for masters, does that work for you?
+
 Your diagrams show 4 sampling locations within the harvesting circuit, would it be possible to reduce this to three points?
+    Follow-up: The uC has a lower resolution on-board ADC, are there some points of measurement you can instead accept lower measurement resolution?
+    Mainly for masters thesis, since high sample rate ADCs (~1Msps) usually only have one channel, meaning we'd need 8 high speed ADCs 
+
 Do you need the data to include the time, so that it can show when the experiment started/ended?
+    We're approaching the limit of what high-speed USB can deliver, can it be omitted
+
 Would you suggest this be a 7.5 point project or a 15 point project, considering we could choose?
+    This might be too late

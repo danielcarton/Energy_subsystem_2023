@@ -32,6 +32,7 @@ V2  (Master's project Version)
     Current Sense:
     OpAmp:
     ADC:
+        ADS127L21                               https://www.ti.com/product/ADS127L21
     uC:
         PIC32MZ0512EFF064-I/PT                  https://www.digikey.no/no/products/detail/microchip-technology/PIC32MZ0512EFF064-I-PT/5323491
             ~250MHz clock

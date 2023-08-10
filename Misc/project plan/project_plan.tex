@@ -1,0 +1,98 @@
+% project plan for energy subsystem
+%-----------------------------------------------------------------------
+\documentclass[a4paper, 12pt]{report}
+
+% Packages
+%-----------------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{multirow}
+
+% Page settings
+%-----------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\graphicspath{{./img/}}
+\setcounter{tocdepth}{2}
+
+% Document information
+%-----------------------------------------------------------------------
+\title{Project Plan Energy subsystem \\ \small{Specialization project and masters project 2023-2024}}
+\author{Daniel Carton, Tobias Lien}
+\date{\today}
+
+% Document
+%-----------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\chapter{Specialization project}
+
+\section{Objective and motivation} % Why are we doing this?
+\section{Deliverables}          % What are we doing?
+\section{Scope}                % What are we not doing?
+\section{Tasks and responsibilities} % Who is doing what?
+\section{Timeline and milest ones}   % When are we doing what?
+
+
+\chapter{Master project - Early scope}
+
+\section{Objective and motivation} % Why are we doing this?
+\section{Scope}                % What are we not doing?
+
+\chapter{Project Comparisons}
+\begin{table}[h!]
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{Aspect [Early Targets]} & \textbf{specialization project} & \textbf{master project} & \textbf{notes} \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Energy storage}} \\
+        \hline
+        Storage efficiency & $\geq 75\%$ &  $\geq 90\%$ & \\
+        \hline
+        Storage capacity & $\geq 69 \mu Ah$ & $\geq  420 \mu Ah$ & \\
+        \hline
+        Output voltage & $ 1.8 V$ & $ 1.8 V$ & Will depend on\\
+        &&& connected SoC\\
+        &&& circuit \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Data Collection}} \\
+        \hline
+        Sample rate & $8\times 1 kHz$ & $8\times 1 MHz$ & \\
+        \hline
+        Sample resolution & $16 bit$ & $24 bit$ & \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Data Processing}} \\
+        \hline
+        Data transmission & Rs-232 & USB high-speed & Requirement \\
+        protocol &&& as result of\\
+        &&& data collection \\
+        &&& rate and volume\\
+        \hline
+        Data rate & $  \approx 192 kbps$ & $\approx 200 Mbps$ & \\
+        \hline
+        Data storage & Connected PC & Connected PC & \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\end{document}
